@@ -86,7 +86,7 @@
 .countdown-container {
   background: #393939;
   padding: 24px;
-  color: #f9ff9e;
+  color: #fcd133;
   font-family: "Roboto", sans-serif;
   width: auto;
   box-sizing: border-box;
@@ -115,7 +115,7 @@
 }
 
 .timer .number {
-  font-size: 56px;
+  font-size: 40px;
   font-weight: bold;
 }
 

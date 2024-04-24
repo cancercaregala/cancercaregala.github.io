@@ -7,6 +7,17 @@
 // Scripts
 // 
 
+function increment() {
+    var numTicketsInput = document.getElementById("numtickets");
+    numTicketsInput.stepUp();
+}
+
+function decrement() {
+    var numTicketsInput = document.getElementById("numtickets");
+    numTicketsInput.stepDown();
+}
+
+
 //countdown
 const dayDisplay = document.querySelector(".days .number");
 const hourDisplay = document.querySelector(".hours .number");

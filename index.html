@@ -92,7 +92,7 @@
                     <h4 class="my-3">At CancerCare for Kids, our mission is to eradicate pediatric cancer through unwavering dedication to funding cutting-edge research and our state-of-the-art facilities and programs. Committed to providing hope and support, we strive to empower the scientific community in their quest for breakthroughs and ensure that every child facing cancer receives the innovative treatments and compassionate care they deserve.</h4>
                 </div> -->
                 
-                <iframe width=70% height="415" src="https://www.youtube.com/embed/dWXuz95uBQo?si=H6Gm0GVenjGjwrEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width=70% height="415" src="https://www.youtube.com/embed/LnvDCgGm8g0?si=qfR-udYudlm4Wx5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div style="height: 50px;"></div>
             </div>
         
@@ -421,21 +421,35 @@
       <div class="donatecontainer">
         
         <div class="donation-form">
-            <h2>Make a Donation</h2>
+          <h2 style="color: white; font-size: 24px;">Make a Donation</h2>
             <form id="donation-form">
                 <div class="donate-input-group">
                     <donatelabel for="namedonate" class="donatelabel"></donatedonatelabel>
-                    <input type="text" id="namedonate" placeholder="Enter your name" required>
+                    <input type="text" id="namedonate" placeholder="Your name *" required>
                 </div>
                 <div class="donate-input-group">
                     <donatedonatelabel for="amount" class="donatedonatelabel"></donatelabel>
-                    <input type="number" id="amount" placeholder="Enter donation amount" required>
+                    <input type="number" id="amount" placeholder="Donation amount *" required>
                 </div>
-                <button type="submit">Donate</button>
+                <div class="donate-input-group">
+                  <donatedonatelabel for="creditcard" class="donatedonatelabel"></donatelabel>
+                  <input type="number" id="creditcard" placeholder="Credit Card Number *" required>
+              </div>
+              <div class="donate-input-group">
+                <donatelabel for="namedonatecredit" class="donatelabel"></donatedonatelabel>
+                <input type="text" id="namedonatecredit" placeholder="Credit Holder Name *" required>
+            </div>
+            <div class="donate-input-group">
+              <donatedonatelabel for="date" class="donatedonatelabel"></donatelabel>
+              <input type="text" id="date" placeholder="Expiration Date *" required>
+          </div>
+          
+                <button type="submit">PAY NOW</button>
             </form>
         </div>
         <div class="top-donators">
-            <h2>Top 5 Donators</h2>
+          <h2 style="color: white; font-size: 24px;">Top 5 Donors</h2>
+
             <ul id="donator-list">
                 <!-- Donator list will be dynamically populated here -->
             </ul>
@@ -444,6 +458,9 @@
     <div class="progress">
         <div id="progress-bar" class="progress-bar"></div>
     </div>
+    <div class="text-center">
+      <h2 style="color: rgb(255, 204, 0); font-size: 24px;"  >Donation Goal: $10,000</h2>
+  </div>
 </section>
        
        

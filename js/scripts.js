@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Clear form inputs
         document.getElementById('namedonate').value = '';
         document.getElementById('amount').value = '';
+        document.getElementById('date').value = '';
+        document.getElementById('creditcard').value = '';
+        document.getElementById('namedonatecredit').value = '';
     });
 
     function addDonation(namedonate, amount) {

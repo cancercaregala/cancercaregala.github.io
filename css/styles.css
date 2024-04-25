@@ -12,6 +12,177 @@
  */
 
 
+
+
+
+
+
+
+
+
+
+
+ .donatecontainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  display: flex;
+}
+
+.donation-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin-right: 20px;
+}
+
+.donate-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center; /* Center horizontally */
+}
+
+.donatelabel {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+.top-donators {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.top-donators h2 {
+  margin-bottom: 10px; /* Add some spacing between title and list */
+}
+
+.top-donators ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+.top-donators li {
+  text-align: center; /* Center-align list items */
+}
+
+
+
+
+.donate-input-group {
+  margin-bottom: 10px;
+}
+
+
+input[type="text"], input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e0eb5e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+#donator-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.progress {
+  margin-left: 17%;
+  margin-top: 20px;
+  height: 30px;
+  width: 65%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 30px;
+  width: 0;
+  background-color: yellow;
+  transition: width 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Increase width of input boxes */
+input[type="text"],
+input[type="number"] {
+  width: 100%; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+.donation-item {
+  background-color: #fff; /* White background */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px; /* Add margin between items */
+  display: inline-block; /* Display inline-block */
+}
+
+.top-donators li {
+  text-align: center; /* Center-align list items */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
  
  #google_translate_element {
   margin-top: 30px;

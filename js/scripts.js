@@ -7,6 +7,98 @@
 // Scripts
 // 
 
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('donation-form');
+    const donatorList = document.getElementById('donator-list');
+    const progressBar = document.getElementById('progress-bar');
+    let totalDonation = 0;
+    const donationGoal = 1000;
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const namedonate = document.getElementById('namedonate').value;
+        const amount = parseFloat(document.getElementById('amount').value);
+
+        // Add donation to the list
+        addDonation(namedonate, amount);
+
+        // Update progress bar
+        updateProgressBar();
+
+        // Clear form inputs
+        document.getElementById('namedonate').value = '';
+        document.getElementById('amount').value = '';
+    });
+
+    function addDonation(namedonate, amount) {
+        const donationItem = document.createElement('div'); // Change to div
+        donationItem.classList.add('donation-item'); // Add class for styling
+        donationItem.textContent = `${namedonate}: $${amount.toFixed(2)}`;
+        
+        const listItem = document.createElement('li'); // Create li for list
+        listItem.appendChild(donationItem);
+        donatorList.appendChild(listItem);
+    
+        totalDonation += amount;
+    
+        // Sort and display top 5 donators
+        updateTopDonators();
+    }
+    
+
+    function updateTopDonators() {
+        const donatorItems = Array.from(donatorList.children);
+        donatorItems.sort((a, b) => {
+            const amountA = parseFloat(a.textContent.split(': $')[1]);
+            const amountB = parseFloat(b.textContent.split(': $')[1]);
+            return amountB - amountA;
+        });
+
+        // Display only top 5 donators
+        while (donatorList.firstChild) {
+            donatorList.removeChild(donatorList.firstChild);
+        }
+        donatorItems.slice(0, 5).forEach(item => {
+            donatorList.appendChild(item);
+        });
+    }
+
+    function updateProgressBar() {
+        const percentage = (totalDonation / donationGoal) * 100;
+        progressBar.style.width = percentage + '%';
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function increment() {
     var numTicketsInput = document.getElementById("numtickets");
     numTicketsInput.stepUp();

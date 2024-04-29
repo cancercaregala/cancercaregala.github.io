@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const donatorList = document.getElementById('donator-list');
     const progressBar = document.getElementById('progress-bar');
     let totalDonation = 0;
-    const donationGoal = 1000;
+    const donationGoal = 10000;
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
